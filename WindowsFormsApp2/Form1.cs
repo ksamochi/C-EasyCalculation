@@ -16,5 +16,23 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            int sum;
+
+
+            try
+            {
+                sum = int.Parse(textBox1.Text) + int.Parse(textBox2.Text);
+                textBox3.Text = sum.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("エラーです");
+                textBox3.Text = "です";
+            }
+
+        }
     }
 }
