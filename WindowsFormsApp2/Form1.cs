@@ -30,7 +30,7 @@ namespace WindowsFormsApp2
             catch
             {
                 MessageBox.Show("エラーです");
-                textBox3.Text = "です";
+                textBox3.Text = "です"; //
             }
 
         }
